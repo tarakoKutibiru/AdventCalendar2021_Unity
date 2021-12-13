@@ -14,6 +14,9 @@ public class Swal
     [DllImport("__Internal")]
     private static extern void SwalFireImage(string imageUrl, string body);
 
+    [DllImport("__Internal")]
+    private static extern void SwalFireYouTube(string videoId);
+
     public Swal()
     {
         #if !UNITY_EDITOR && UNITY_WEBGL
@@ -26,7 +29,7 @@ public class Swal
 
     public void SwalFireRandom()
     {
-        var rand = Random.Range(0, 3);
+        var rand = Random.Range(0, 4);
         if (rand == 0)
         {
             SwalFireBase("Hello World.");
@@ -35,10 +38,14 @@ public class Swal
         {
             SwalFireCustomPosition("Hello World.");
         }
-        else
+        else if (rand == 2)
         {
             var imageUrl = "https://images.pexels.com/photos/1314550/pexels-photo-1314550.jpeg";
             SwalFireImage(imageUrl, "Hello World.");
+        }
+        else
+        {
+            SwalFireYouTube("jNQXAC9IVRw");
         }
     }
 }
