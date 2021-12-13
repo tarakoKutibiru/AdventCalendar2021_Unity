@@ -30,29 +30,28 @@ public class Swal
         #endif
     }
 
-    public void SwalFireRandom()
+    public void SwalFire(int index)
     {
-        var rand = Random.Range(0, 5);
-        if (rand == 0)
+        if (index == 0)
         {
             SwalFireBase("Hello World.");
         }
-        else if (rand == 1)
+        else if (index == 1)
         {
             SwalFireCustomPosition("Hello World.");
         }
-        else if (rand == 2)
+        else if (index == 2)
         {
             var imageUrl = "https://images.pexels.com/photos/1314550/pexels-photo-1314550.jpeg";
             SwalFireImage(imageUrl, "Hello World.");
         }
-        else if (rand == 3)
+        else if (index == 3)
         {
-            SwalFireYouTube("jNQXAC9IVRw");
+            SwalFireGoogleMap();
         }
         else
         {
-            SwalFireGoogleMap();
+            SwalFireYouTube("jNQXAC9IVRw");
         }
     }
 }

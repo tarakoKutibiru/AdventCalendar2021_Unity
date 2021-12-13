@@ -14,9 +14,9 @@ public class Sample : MonoBehaviour
         this.pushBar = new Pushbar();
     }
 
-    public void OnSelectedSwalFireButton()
+    public void OnSelectedSwalFireButton(int index)
     {
-        this.swal?.SwalFireRandom();
+        this.swal?.SwalFire(index);
     }
 
     public void OnSelectedUppyButton()
