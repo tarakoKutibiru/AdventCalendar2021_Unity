@@ -395,7 +395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Push Notification
+  m_Text: sweetalert2 random
 --- !u!222 &869764806
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 624242999}
         m_TargetAssemblyTypeName: Sample, Assembly-CSharp
-        m_MethodName: OnSelectedPushNotificationButton
+        m_MethodName: OnSelectedSwalFireButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
