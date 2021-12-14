@@ -60,6 +60,9 @@ mergeInto(LibraryManager.library,
                 });
             }
 
+            // Geolocation APIで位置情報を取得する。
+            // unityroomの場合はiframeでサンドボックス化されていて、位置情報へのアクセスを許可されていないので、常に失敗する
+            // unityroomじゃなくて、local serverとか建てて実行してみると、動作確認できる。
             navigator.geolocation.getCurrentPosition(succeed, failed);
         },
 
