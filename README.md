@@ -6,3 +6,5 @@ UnityのWebGL向けビルドでサードパーティ製のJavaScriptライブラ
 
 SweetAlert2, Uppy, Pushbar, Push.jsについて、それぞれ実装して試せるようにしています。ですが、Push.jsについてはunityroomで動作しないことを確認したので、最新のコミットでは削除してあります。実装を見たい場合はコミットログを見て下さい。
 
+実際に動作するサンプルをunityroomで公開しています。
+https://unityroom.com/games/javascript_library_sample
